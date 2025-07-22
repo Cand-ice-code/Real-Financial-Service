@@ -2,85 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact Us - Real Financial Services</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <style>
-    body { background-color: #121212; color: #fff; font-family: Arial, sans-serif; }
-    .navbar { background-color: #ff6600; }
-    a.nav-link { color: #fff; }
-    a.nav-link:hover { color: #ffc266; }
-    footer { background-color: #111; color: #aaa; padding: 20px; text-align: center; margin-top: 50px; }
-    label { margin-top: 10px; }
-    input, textarea { background-color: #222; border: none; color: #fff; padding: 10px; width: 100%; border-radius: 5px; }
-    input::placeholder, textarea::placeholder { color: #bbb; }
-    button { background-color: #ff6600; border: none; padding: 10px 20px; color: #fff; border-radius: 5px; margin-top: 15px; }
-    button:hover { background-color: #cc5200; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - REAL Financial Services</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="retirement-annuity.html">Retirement Annuity</a></li>
-    <li><a href="life-cover.html">Life Cover</a></li>
-    <li><a href="tax-free-savings.html">Tax-Free Savings</a></li>
-    <li><a href="lump-sum-investment.html">Lump Sum Investment</a></li>
-    <li><a href="appointment.html">Book an Appointment</a></li>
-    <li><a href="faq.html">FAQ</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
-<nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Real Financial Services</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="funeral.html">Funeral Cover</a></li>
-            <li><a class="dropdown-item" href="life.html">Life Cover</a></li>
-            <li><a class="dropdown-item" href="retirement.html">Retirement Annuity</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="faq.html">FAQs</a></li>
-        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="appointment.html">Book an Appointment</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
-    </div>
-  </div>
-</nav>
+    </nav>
+  </header>
 
-<div class="container mt-5 mb-5">
-  <h1>Contact Us</h1>
-  <p>We’re here to help! Whether you have questions about our services, want a quote, or need assistance, please get in touch.</p>
-  <form id="contactForm" action="mailto:info@realfinancialservices.co.za" method="post" enctype="text/plain">
-    <label for="name">Full Name</label>
-    <input type="text" id="name" name="Name" placeholder="Your full name" required />
+  <main>
+    <section class="contact-section">
+      <h1>Contact Us</h1>
+      <p><strong>Let’s Talk About Your Financial Future</strong></p>
+      <p>We’re here to answer your questions, offer guidance, and help you take the next step toward financial peace of mind. Whether you’re looking for retirement planning, life cover, or investment advice—REAL Financial Services is just a call or click away.</p>
 
-    <label for="email">Email Address</label>
-    <input type="email" id="email" name="Email" placeholder="your.email@example.com" required />
+      <h2>📞 Call or WhatsApp Us</h2>
+      <p><strong>Andile Maseko</strong></p>
+      <p>Phone: <a href="tel:0607225580">060 722 5580</a><br>
+         WhatsApp: <a href="https://wa.me/27607225580" target="_blank">+27 60 722 5580</a></p>
 
-    <label for="phone">Phone Number</label>
-    <input type="tel" id="phone" name="Phone" placeholder="012 345 6789" required />
+      <h2>📧 Email Us</h2>
+      <p>General Inquiries: <a href="mailto:andile.maseko@sanlam4u.co.za">andile.maseko@sanlam4u.co.za</a></p>
+      <p>Appointments: <a href="appointment.html">Book an Appointment</a></p>
 
-    <label for="message">Message</label>
-    <textarea id="message" name="Message" rows="5" placeholder="Write your message here..." required></textarea>
+      <h2>📍 Office Location</h2>
+      <p>REAL Financial Services<br>
+        Sandton Gauteng, South Africa<br>
+         <em>Meetings by appointment only.</em></p>
 
-    <button type="submit">Send Message</button>
-  </form>
-</div>
+      <h2>🕒 Office Hours</h2>
+      <p>Monday – Friday: 08:00 AM – 17:00 PM<br>
+         Saturday: 09:00 AM – 13:00 PM<br>
+         Sunday & Public Holidays: <strong>Closed</strong></p>
 
-<footer>
-  <p>&copy; 2025 Real Financial Services | 39 Ferguson Road, Illovo | Tel: 0607225580</p>
-</footer>
+      <h2>💻 Prefer Online?</h2>
+      <p>Schedule a free virtual or phone consultation via our <a href="appointment.html">Book an Appointment</a> page.</p>
+    </section>
+  </main>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <footer>
+    <p>&copy; 2025 REAL Financial Services. All rights reserved.</p>
+  </footer>
 </body>
 </html>
