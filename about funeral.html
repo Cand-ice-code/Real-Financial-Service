@@ -6,27 +6,79 @@
   <title>Funeral Cover - Real Financial Services</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
-    body { background-color: #121212; color: #fff; font-family: Arial, sans-serif; }
-    .navbar { background-color: #ff6600; }
-    a.nav-link { color: #fff; }
-    a.nav-link:hover { color: #ffc266; }
-    footer { background-color: #111; color: #aaa; padding: 20px; text-align: center; margin-top: 50px; }
+    body {
+      background-color: #121212;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background-color: #ff6600;
+    }
+    .navbar-nav .nav-link {
+      color: #fff;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #ffc266;
+    }
+    footer {
+      background-color: #111;
+      color: #aaa;
+      padding: 20px;
+      text-align: center;
+      margin-top: 50px;
+    }
   </style>
 </head>
 <body>
-  <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="retirement-annuity.html">Retirement Annuity</a></li>
-    <li><a href="life-cover.html">Life Cover</a></li>
-    <li><a href="tax-free-savings.html">Tax-Free Savings</a></li>
-    <li><a href="lump-sum-investment.html">Lump Sum Investment</a></li>
-    <li><a href="appointment.html">Book an Appointment</a></li>
-    <li><a href="faq.html">FAQ</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-<nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Real Financial Services</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu
+
+  <!-- Bootstrap Navbar Only -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Real Financial Services</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="retirement-annuity.html">Retirement Annuity</a></li>
+          <li class="nav-item"><a class="nav-link" href="life-cover.html">Life Cover</a></li>
+          <li class="nav-item"><a class="nav-link active" href="funeral.html">Funeral Cover</a></li>
+          <li class="nav-item"><a class="nav-link" href="tax-free-savings.html">Tax-Free Savings</a></li>
+          <li class="nav-item"><a class="nav-link" href="lump-sum-investment.html">Lump Sum Investment</a></li>
+          <li class="nav-item"><a class="nav-link" href="appointment.html">Book an Appointment</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <main class="container mt-5">
+    <h1>Funeral Cover</h1>
+    <p>
+      Our Funeral Cover provides financial support during one of life’s most difficult moments. At Real Financial Services, we help you plan ahead to ensure your loved ones are not burdened with costs when you pass away.
+    </p>
+    <p>
+      We offer affordable and flexible options so that you can select the coverage that suits your family's needs. Our team is here to guide you through every step, offering peace of mind and clarity.
+    </p>
+    <p>
+      <strong>Benefits include:</strong>
+      <ul>
+        <li>Affordable premiums</li>
+        <li>Fast payouts</li>
+        <li>Coverage for extended family members</li>
+        <li>Optional benefits like repatriation and memorial services</li>
+      </ul>
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Real Financial Services | 39 Ferguson Road, Illovo | Tel: 0607225580</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
