@@ -1,89 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Book an Appointment | REAL Financial Services</title>
-  <link rel="stylesheet" href="style.css"> <!-- Make sure this links to your existing CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body { background-color: #121212; color: #fff; font-family: Arial, sans-serif; }
+    .navbar { background-color: #ff6600; }
+    a.nav-link { color: #fff; }
+    a.nav-link:hover { color: #ffc266; }
+    footer { background-color: #111; color: #aaa; padding: 20px; text-align: center; margin-top: 50px; }
+    label { margin-top: 10px; }
+    input, select, textarea { background-color: #222; border: none; color: #fff; padding: 10px; width: 100%; border-radius: 5px; }
+    input::placeholder, textarea::placeholder { color: #bbb; }
+    button { background-color: #ff6600; border: none; padding: 10px 20px; color: #fff; border-radius: 5px; margin-top: 15px; cursor: pointer; }
+    button:hover { background-color: #cc5200; }
+    main { max-width: 700px; margin: 40px auto; padding: 0 15px; }
+    h1, h2, h3 { color: #ff6600; }
+  </style>
 </head>
 <body>
 
-  <header>
-    <h1>REAL Financial Services</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="retirement-annuity.html">Retirement Annuity</a></li>
-        <li><a href="life-cover.html">Life Cover</a></li>
-        <li><a href="tax-free-savings.html">Tax-Free Savings</a></li>
-        <li><a href="lump-sum-investment.html">Lump Sum Investment</a></li>
-        <li><a href="appointment.html">Book an Appointment</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Top navigation -->
+  <nav>
+    <ul style="list-style:none; padding-left: 10px; display:flex; gap: 15px;">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="retirement-annuity.html">Retirement Annuity</a></li>
+      <li><a href="life-cover.html">Life Cover</a></li>
+      <li><a href="tax-free-savings.html">Tax-Free Savings</a></li>
+      <li><a href="lump-sum-investment.html">Lump Sum Investment</a></li>
+      <li><a href="appointment.html">Book an Appointment</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Real Financial Services</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="funeral.html">Funeral Cover</a></li>
+              <li><a class="dropdown-item" href="life.html">Life Cover</a></li>
+              <li><a class="dropdown-item" href="retirement.html">Retirement Annuity</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link active" href="appointment.html">Book an Appointment</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <main>
-    <section>
-      <h2>Book an Appointment</h2>
-      <p>Ready to take control of your financial future? Whether you need guidance on retirement planning, life cover, investments, or tax-efficient strategies—we’re here to help.</p>
-      <p><strong>Booking an appointment is quick, easy, and obligation-free.</strong></p>
-    </section>
+    <h1>Book an Appointment</h1>
 
-    <section>
-      <h3>How It Works:</h3>
-      <ol>
-        <li><strong>Choose a Service</strong><br>
-        Select the type of consultation you need—Retirement Planning, Life Insurance, Investments, or General Financial Advice.</li>
-        <li><strong>Pick a Time That Suits You</strong><br>
-        Use our online calendar to book a slot that fits your schedule—weekdays, after-hours, or even Saturdays.</li>
-        <li><strong>Meet With a Certified Advisor</strong><br>
-        We’ll meet via phone, video call, or in person—whatever works best for you.</li>
-      </ol>
-    </section>
+    <p>Ready to take control of your financial future? Whether you need guidance on retirement planning, life cover, investments, or tax-efficient strategies—we’re here to help.</p>
+    <p><strong>Booking an appointment is quick, easy, and obligation-free.</strong></p>
 
-    <section>
-      <h3>Book Now</h3>
-      <form action="#" method="post">
-        <label for="full-name">Full Name:</label><br>
-        <input type="text" id="full-name" name="full-name" required><br><br>
+    <h2>How It Works:</h2>
+    <ol>
+      <li><strong>Choose a Service</strong><br>
+      Select the type of consultation you need—Retirement Planning, Life Insurance, Investments, or General Financial Advice.</li>
+      <li><strong>Pick a Time That Suits You</strong><br>
+      Use our online calendar to book a slot that fits your schedule—weekdays, after-hours, or even Saturdays.</li>
+      <li><strong>Meet With a Certified Advisor</strong><br>
+      We’ll meet via phone, video call, or in person—whatever works best for you.</li>
+    </ol>
 
-        <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+    <h2>Book Now</h2>
+    <form action="#" method="post" novalidate>
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full-name" placeholder="Your full name" required>
 
-        <label for="phone">Phone Number:</label><br>
-        <input type="tel" id="phone" name="phone" required><br><br>
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
 
-        <label for="service">Select a Service:</label><br>
-        <select id="service" name="service" required>
-          <option value="Retirement Planning">Retirement Planning</option>
-          <option value="Life Insurance">Life Insurance</option>
-          <option value="Investments">Investments</option>
-          <option value="Financial Advice">General Financial Advice</option>
-        </select><br><br>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="012 345 6789" required>
 
-        <label for="consultation">Preferred Consultation Method:</label><br>
-        <select id="consultation" name="consultation" required>
-          <option value="Phone Call">Phone Call</option>
-          <option value="Zoom">Video Call (Zoom/Google Meet)</option>
-          <option value="In-Person">In-Person (Gauteng only)</option>
-        </select><br><br>
+      <label for="service">Select a Service:</label>
+      <select id="service" name="service" required>
+        <option value="">-- Select Service --</option>
+        <option value="Retirement Planning">Retirement Planning</option>
+        <option value="Life Insurance">Life Insurance</option>
+        <option value="Investments">Investments</option>
+        <option value="Financial Advice">General Financial Advice</option>
+      </select>
 
-        <label for="date">Preferred Date:</label><br>
-        <input type="date" id="date" name="date" required><br><br>
+      <label for="consultation">Preferred Consultation Method:</label>
+      <select id="consultation" name="consultation" required>
+        <option value="">-- Select Method --</option>
+        <option value="Phone Call">Phone Call</option>
+        <option value="Zoom">Video Call (Zoom/Google Meet)</option>
+        <option value="In-Person">In-Person (Gauteng only)</option>
+      </select>
 
-        <label for="time">Preferred Time:</label><br>
-        <input type="time" id="time" name="time" required><br><br>
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required>
 
-        <button type="submit">Schedule My Appointment</button>
-      </form>
-    </section>
+      <label for="time">Preferred Time:</label>
+      <input type="time" id="time" name="time" required>
 
-    <section>
-      <h3>Prefer to speak with us first?</h3>
+      <button type="submit">Schedule My Appointment</button>
+    </form>
+
+    <section style="margin-top: 30px;">
+      <h2>Prefer to speak with us first?</h2>
       <p><strong>Call us:</strong> 060 722 5580</p>
-      <p><strong>Email:</strong> [andile.maseko@sanlam4u.co.za]</p>
+      <p><strong>Email:</strong> <a href="mailto:andile.maseko@sanlam4u.co.za" style="color:#ffc266;">andile.maseko@sanlam4u.co.za</a></p>
     </section>
   </main>
 
@@ -91,5 +127,7 @@
     <p>&copy; 2025 REAL Financial Services. All rights reserved.</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
